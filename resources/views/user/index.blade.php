@@ -14,7 +14,7 @@
 <td>{{ $u->name }}</td>
 <td>{{ $u->email }}</td>
 <td>{{ $u->mobile }}</td>
-<td>@if($u->profile_pic)<img src="/storage/app/public/profiles/{{ $u->profile_pic }}" width="50">@endif</td>
+<td>@if($u->profile_pic)<img src="/storage/app/public/{{ $u->profile_pic }}" width="50">@endif</td>
 <td><a href="{{ route('user.edit',$u->id) }}">Edit</a> |
 <form action="{{ route('user.destroy',$u->id) }}" method="POST" style="display:inline-block;">
 @csrf @method('DELETE')
