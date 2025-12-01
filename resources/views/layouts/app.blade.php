@@ -30,7 +30,7 @@
         margin: 0 8px;
         transition: 0.3s;
     }
-    .btn:hover { background: #5947db; }
+    .btn:hover { background: #yellow; }
 
     /* Card / Form Container */
     .card {
@@ -81,7 +81,7 @@
         margin-top: 10px;
     }
     button:hover {
-        background: #5947db;
+        background: cyan;
     }
 
     /* Table */

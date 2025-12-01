@@ -9,10 +9,10 @@
     <form action="{{ route('user.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
 
-        <label>Name</label>
+        <label>User Name</label>
         <input type="text" name="name" required>
 
-        <label>Email</label>
+        <label>User Email</label>
         <input type="email" name="email" required>
 
         <label>Mobile</label>
