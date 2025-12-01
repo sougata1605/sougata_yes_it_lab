@@ -1,25 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>@yield('title')</title>
+<meta charset="UTF-8">
+<title>@yield('title')</title>
 
-    <!-- Global CSS -->
-    <style>
-        body {
-            margin: 0;
-            padding: 20px;
-            font-family: "Poppins", sans-serif;
-            background: #f0f2f5;
-        }
-    </style>
+<!-- GLOBAL CSS FOR ALL PAGES -->
+<style>
+    body {
+        margin: 0;
+        padding: 20px;
+        font-family: "Poppins", sans-serif;
+        background: #f0f2f5;
+    }
 
-    @yield('css')
+    h2 {
+        text-align: center;
+        color: #444;
+        margin-bottom: 25px;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 10px 16px;
+        background: #6a5acd;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        margin: 0 8px;
+        transition: 0.3s;
+    }
+    .btn:hover { background: #5947db; }
+
+    /* Card / Form Container */
+    .card {
+        background: #fff;
+        width: 450px;
+        margin: auto;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    /* Labels & Inputs */
+    label {
+        font-weight: 600;
+        margin-top: 10px;
+        display: block;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="file"] {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        margin-bottom: 15px;
+        transition: 0.3s;
+        font-size: 15px;
+    }
+    input:focus {
+        border-color: #6a5acd;
+        outline: none;
+        box-shadow: 0 0 5px rgba(106, 90, 205, 0.4);
+    }
+
+    /* Submit Button */
+    button {
+        width: 100%;
+        padding: 12px;
+        background: #6a5acd;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-top: 10px;
+    }
+    button:hover {
+        background: #5947db;
+    }
+
+    /* Table */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        margin-top: 20px;
+    }
+    th, td {
+        padding: 14px;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+    th {
+        background: #6a5acd;
+        color: white;
+        font-weight: 600;
+    }
+    tr:hover { background: #f8f7ff; }
+
+    /* Action Buttons */
+    .action-btn {
+        padding: 6px 12px;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+    .edit-btn { background: #00a884; color: white; }
+    .edit-btn:hover { background: #008c6e; }
+    .delete-btn { background: #e63946; color: white; }
+    .delete-btn:hover { background: #c62839; }
+
+    .profile-img {
+        border-radius: 8px;
+        width: 55px;
+        height: 55px;
+        object-fit: cover;
+    }
+
+</style>
 </head>
 
 <body>
 
-    @yield('content')
+@yield('content')
 
 </body>
 </html>
