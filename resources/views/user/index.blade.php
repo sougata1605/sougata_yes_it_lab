@@ -4,6 +4,8 @@
 
 @section('content')
 
+
+
 <h2>User List</h2>
 
 <div style="text-align:center; margin-bottom:20px;">
@@ -13,17 +15,20 @@
 
 <table>
     <tr>
-        <th>User ID</th>
+        <th style="width: 50px;">User ID</th>
         <th>User Name</th>
         <th>Email</th>
         <th>Mobile</th>
         <th>Picture</th>
         <th>Action</th>
     </tr>
+ @php $i = 1; @endphp
 
     @foreach($users as $u)
+
+
     <tr>
-        <td>{{ $u->id }}</td>
+        <td>{{ $i++ }}</td>
         <td>{{ $u->name }}</td>
         <td>{{ $u->email }}</td>
         <td>{{ $u->mobile }}</td>
@@ -38,7 +43,7 @@
 
         <td>
             <a href="{{ route('user.edit',$u->id) }}">
-                <button class="action-btn edit-btn">Edit</button>
+                <button class="action-btn edit-btn" style="width: 60px;">Edit</button>
             </a>
 
             <form action="{{ route('user.destroy',$u->id) }}" method="POST" style="display:inline-block;">

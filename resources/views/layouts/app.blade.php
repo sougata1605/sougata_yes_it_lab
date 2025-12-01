@@ -106,16 +106,20 @@
     }
     tr:hover { background: #f8f7ff; }
 
-    /* Action Buttons */
-    .action-btn {
-        padding: 6px 12px;
-        border-radius: 6px;
-        border: none;
-        cursor: pointer;
-        font-size: 14px;
-        font-weight: 600;
-        transition: 0.3s;
-    }
+    
+
+.action-btn {
+  padding: 8px 10px;      /* medium size */
+  font-size: 15px;        /* medium text */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+
+
+
     .edit-btn { background: #00a884; color: white; }
     .edit-btn:hover { background: #008c6e; }
     .delete-btn { background: #e63946; color: white; }
