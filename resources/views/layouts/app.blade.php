@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>@yield('title')</title>
 
-<!-- GLOBAL CSS FOR ALL PAGES -->
+
 <style>
     body {
         margin: 0;
@@ -100,9 +100,9 @@
         border-bottom: 1px solid #eee;
     }
     th {
-        background: #6a5acd;
+        background: #F08080;
         color: white;
-        font-weight: 600;
+        font-weight: 400;
     }
     tr:hover { background: #f8f7ff; }
 
@@ -120,10 +120,10 @@
 
 
 
-    .edit-btn { background: #00a884; color: white; }
-    .edit-btn:hover { background: #008c6e; }
-    .delete-btn { background: #e63946; color: white; }
-    .delete-btn:hover { background: #c62839; }
+    .edit-btn { background: #008080; color: white; }
+    .edit-btn:hover { background: #008080; }
+    .delete-btn { background: #800080; color: white; }
+    .delete-btn:hover { background: #800080; }
 
     .profile-img {
         border-radius: 8px;

@@ -11,11 +11,14 @@
 <div style="text-align:center; margin-bottom:20px;">
     <a class="btn" href="{{ route('user.create') }}">Add User</a>
     <a class="btn" href="{{ route('user.export.csv') }}">Export CSV</a>
+
+      <a class="btn" href="{{ route('audio.index') }}"> Audio file length  </a>
+    <a class="btn" href="{{ route('user.export.csv') }}">Calculate distance</a>
 </div>
 
 <table>
     <tr>
-        <th style="width: 50px;">User ID</th>
+        <th style="width: 50px;">UID</th>
         <th>User Name</th>
         <th>Email</th>
         <th>Mobile</th>
@@ -42,15 +45,22 @@
         </td>
 
         <td>
-            <a href="{{ route('user.edit',$u->id) }}">
-                <button class="action-btn edit-btn" style="width: 60px;">Edit</button>
-            </a>
 
-            <form action="{{ route('user.destroy',$u->id) }}" method="POST" style="display:inline-block;">
-                @csrf @method('DELETE')
-                <button class="action-btn delete-btn" type="submit">Delete</button>
-            </form>
-        </td>
+    <a href="{{ route('user.edit', $u->id) }}">
+        <button class="action-btn edit-btn" type="button" style="width: 60px;">
+            Edit
+        </button>
+    </a>
+
+    <form action="{{ route('user.destroy', $u->id) }}" method="POST" style="display:inline-block;">
+        @csrf
+        @method('DELETE')
+        <button class="action-btn delete-btn" type="submit">
+            Delete
+        </button>
+    </form>
+
+</td>
     </tr>
     @endforeach
 
