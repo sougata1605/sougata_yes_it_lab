@@ -1,3 +1,10 @@
+@extends('layouts.app')
+
+@section('title', 'Distance List')
+
+@section('content')
+
+
 <div class="card">
 <h2>Distance Calculator</h2>
 

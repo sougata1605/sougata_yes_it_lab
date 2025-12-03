@@ -13,7 +13,7 @@
     <a class="btn" href="{{ route('user.export.csv') }}">Export CSV</a>
 
       <a class="btn" href="{{ route('audio.index') }}"> Audio file length  </a>
-    <a class="btn" href="{{ route('user.export.csv') }}">Calculate distance</a>
+    <a class="btn" href="{{ route('distance.index') }}">Calculate Distance</a>
 </div>
 
 <table>

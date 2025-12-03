@@ -13,8 +13,8 @@ Route::get('/export-csv',[UserDataController::class,'exportCSV'])->name('user.ex
 Route::get('audio', [AudioController::class, 'index'])->name('audio.index');
 Route::post('/audio-length', [AudioController::class, 'getAudioLength'])->name('audio.length');
 
-Route::get('/distance', [DistanceController::class, 'index'])->name('distance.index');
-Route::post('/distance/calculate', [DistanceController::class, 'calculate'])->name('distance.calculate');
+Route::get('distance', [AudioController::class, 'distance_index'])->name('distance.index');
+Route::post('distance/calculate', [AudioController::class, 'calculate'])->name('distance.calculate');
 
 
 
